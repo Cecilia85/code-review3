@@ -1,9 +1,11 @@
-
+//Bussiness Logic or back-end//
 function milkshake(fruits) {
   var fruitSliced = fruits[0].slice(2) + fruits[1].slice(2) + fruits[2].slice(2);
   return("You had a "+ fruitSliced+" milkshake!");
 };
 
+
+//Front-end logic//
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
     event.preventDefault();
