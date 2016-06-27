@@ -1,19 +1,23 @@
-//Bussiness Logic or back-end//
-function milkshake(fruits) {
-  var fruitSliced = fruits[0].slice(2) + fruits[1].slice(2) + fruits[2].slice(2);
-  return("You had a "+ fruitSliced+" milkshake!");
+//Back-End//
+var number = function(x) {
+  for (var index = 1; index <= x; index += 1) {
+    if (index % 15 === 0) {
+         $(".pingpong").append("<li>" + "pingpong" + "</li>");
+    } else if (index % 3 === 0) {
+         $(".pingpong").append("<li>" + "ping" + "</li>");
+    } else if (index % 5 === 0) {
+         $(".pingpong").append("<li>" + "pong" + "</li>");
+    } else {
+         $(".pingpong").append("<li>" + index + "</li>");
+    }
+  }
 };
-
-
-//Front-end logic//
-$(document).ready(function() {
+//Front-End//
+$(document).ready(function () {
   $("#blanks form").submit(function(event) {
     event.preventDefault();
-    var fruits = [];
-    fruits.push(($("input#fruit1").val()).toUpperCase());
-    fruits.push(($("input#fruit2").val()).toUpperCase());
-    fruits.push(($("input#fruit3").val()).toUpperCase());
-    var result = milkshake(fruits);
-    alert(result);
+    var result = $("input#number").val();
+    number(result);
+    $("#output").show();
   });
 });
