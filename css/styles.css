@@ -10,3 +10,13 @@
 body{
   background-color:#ccd8ff;
 }
+h1{
+  text-align: center;
+  
+}
+.jumbotron{
+  background-image:url("../img/pingpong.jpeg");
+  background-repeat:5;
+  color:white;
+  text-shadow: 1px 1px 0 #222;
+}

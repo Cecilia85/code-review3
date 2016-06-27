@@ -2,13 +2,13 @@
 var number = function(x) {
   for (var index = 1; index <= x; index += 1) {
     if (index % 15 === 0) {
-         $(".pingpong").append("<li>" + "pingpong" + "</li>");
+         $(".list").append("<li>" + "pingpong" + "</li>");
     } else if (index % 3 === 0) {
-         $(".pingpong").append("<li>" + "ping" + "</li>");
+         $(".list").append("<li>" + "ping" + "</li>");
     } else if (index % 5 === 0) {
-         $(".pingpong").append("<li>" + "pong" + "</li>");
+         $(".list").append("<li>" + "pong" + "</li>");
     } else {
-         $(".pingpong").append("<li>" + index + "</li>");
+         $(".list").append("<li>" + index + "</li>");
     }
   }
 };
